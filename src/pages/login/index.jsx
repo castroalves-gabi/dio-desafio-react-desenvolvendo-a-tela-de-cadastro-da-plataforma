@@ -7,7 +7,6 @@ import { api } from '../../services/api';
 
 import { useForm } from "react-hook-form";
 
-
 import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
 
 const Login = () => {
@@ -28,7 +27,7 @@ const Login = () => {
                 return
             }
 
-            alert('Usuário ou senha inválido')
+            alert('Usuário ou senha inválida')
         }catch(e){
             //TODO: HOUVE UM ERRO
         }
@@ -48,14 +47,14 @@ const Login = () => {
                 <TitleLogin>Faça seu cadastro</TitleLogin>
                 <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email"  control={control} />
+                    <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email" control={control} />
                     {errors.email && <span>E-mail é obrigatório</span>}
                     <Input type="password" placeholder="Senha" leftIcon={<MdLock />}  name="senha" control={control} />
                     {errors.senha && <span>Senha é obrigatório</span>}
                     <Button title="Entrar" variant="secondary" type="submit"/>
                 </form>
                 <Row>
-                    <EsqueciText>Esqueci minha senha</EsqueciText>
+                    <EsqueciText>Esqueci minha senha.</EsqueciText>
                     <CriarText>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>

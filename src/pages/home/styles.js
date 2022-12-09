@@ -12,7 +12,6 @@ export const Container = styled.main`
     align-items: center;
 `
 
-
 export const Title = styled.h2`
     font-family: 'Open Sans';
     font-style: normal;
@@ -24,11 +23,9 @@ export const Title = styled.h2`
 
     color: #FFFFFF;
 `
-
 export const TitleHighlight = styled.span`
     color: #E4105D;;
 `
-
 export const TextContent = styled.p`
     font-family: 'Open Sans';
     font-style: normal;

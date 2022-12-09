@@ -6,7 +6,7 @@ export const ButtonContainer = styled.button`
     position: relative;
 
     color: #FFFFFF;
-    padding: 2px 12px;
+    padding: 8px 12px;
     min-width: 120px;
     width: 100%;
     
